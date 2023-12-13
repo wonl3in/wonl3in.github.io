@@ -1,0 +1,2216 @@
+
+/* --------------------------------미디어 쿼리-------------------------------------*/
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 1300px) {
+    #main {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #mobile {
+        display: none;
+    }
+}
+
+#mobile {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 40%;
+    width: 99%;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+/* --------------------------------미디어 쿼리-------------------------------------*/
+
+
+
+
+
+
+/* -------------------------------- 바디, 배경 관련 -------------------------------------*/
+#bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0px red solid; 
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin:0;
+    border:0;
+    padding:0;
+    overflow: hidden;
+    
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* 흐림 효과 */
+    z-index: 2; /* 팝업 위에 위치 */
+    display: none; /* 초기에는 숨김 */
+    animation: fadeOut 1s ease;
+}
+
+
+/* -------------------------------- 바디, 배경 관련 -------------------------------------*/
+
+
+/* -------------------------------- 네비바 -------------------------------------*/
+
+nav {
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    transition: font-size 0.3s ease; /* 폰트 크기 변화에 트랜지션 적용 */
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: 400;
+  }
+
+  nav ul li a:hover {
+    font-size: 24px; /* 호버 시 폰트 크기 증가 */
+  }
+
+/* -------------------------------- 네비바 -------------------------------------*/
+
+
+
+
+
+
+/* -------------------------------- 리스트, 어바웃 팝업 -------------------------------------*/
+
+#list_popup {
+    display: none;
+    width: 85vw;
+    height: 40vw;
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(199, 199, 199) solid;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    box-sizing: border-box;
+    z-index: 999;
+  }
+
+
+ .list_popup > .images{
+  width: 79vw;
+  height: 34vw;
+  margin: 0;
+  padding: 0;
+}
+
+
+.images > img{
+  position: absolute;
+  margin-top: -100px;
+  width: 79vw;
+  height: 47vw;
+}
+
+
+
+#about_popup {
+    display: none;
+    width: 60vw;
+    height: 20vw;
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(199, 199, 199) solid;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    box-sizing: border-box;
+    z-index: 999;
+  }  
+
+/* -------------------------------- 리스트, 어바웃 팝업 -------------------------------------*/
+
+
+
+
+
+
+
+/* -------------------------------- 기본 팝업 -------------------------------------*/
+.popup {
+  display: none;
+  width: 75vw;
+  height: 42vw;
+  background-color: rgb(255, 255, 255);
+  border: 1px rgb(199, 199, 199) solid;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  z-index: 90;
+}  
+
+.popup > .image{
+  width: 75vw;
+  height: 48vw;
+}
+
+
+.popup > .image > img{
+  width: 74.9vw;
+  height: 41.9vw;
+  margin: 0;
+}
+
+/* -------------------------------- 기본 팝업 -------------------------------------*/
+
+
+
+
+
+
+/* -------------------------------- F.O.U.R 박스 -------------------------------------*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+  
+}
+
+.box {
+  width: 350px;
+  height: 500px;
+  border: 0px solid #000000cc; 
+  display: flex;
+  margin: 0 20px;
+}
+
+
+/* -------------------------------- F.O.U.R 박스 -------------------------------------*/
+
+
+
+
+
+
+
+/* -------------------------------- F 박스 -------------------------------------*/
+/* ------------------ F 막대 모음------------------*/
+.F{             /* 봄여름가을겨울_좌------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  width: 190px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+.F1{             /* 봄여름가을겨울_우------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 325px;
+  width: 25px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.F2{             /* 맥주 4캔_상------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 30px;
+  width: 22px;
+  height: 102px;
+  transition: 2s;
+  z-index: -1;
+}
+.F3{             /* 맥주 4캔_하------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 200px;
+  width: 22px;
+  height: 300px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.F4{             /* 최초의 합성수_상------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 22px;
+  height: 270px;
+  transition: 2s;
+  z-index: -1;
+}
+.F5{             /* 최초의 합성수_하------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 402px;
+  margin-left: 30px;
+  width: 22px;
+  height: 99px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.F6{             /* 네잎클로버 단일------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 30px;
+  margin-left: 140px;
+  width: 209px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.F7{             /* 엘리베이터_좌------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 200px;
+  margin-left: 60px;
+  width: 80px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+.F8{             /* 엘리베이터_우------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 200px;
+  margin-left: 250px;
+  width: 100px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.F9{             /* 자동차바퀴_좌------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 230px;
+  margin-left: 60px;
+  width: 40px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+.F10{             /* 자동차바퀴_우------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 230px;
+  margin-left: 256px;
+  width: 94px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+/* ------------------ F 막대 모음------------------*/
+
+
+
+
+/* ------------------ F 글 모음------------------*/
+/* 봄,여름,가을,겨울 */
+#season{
+  display: flex;
+  margin-left: 192px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.F1_click_text_1 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.F1_click_text_1 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.close-button1 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 봄,여름,가을,겨울 */
+
+
+
+/* 엘리베이터 */
+#elevator{
+  display: flex;
+  margin-left: -179px;
+  margin-top: 200px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.F7_click_text_2 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.F7_click_text_2 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button2 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 엘리베이터 */
+
+
+
+/* 최초의 합성수 */
+#thefirst{
+  display: flex;
+  rotate: 90deg;
+  margin-left: -253px;
+  margin-top: 340px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.F4_click_text_3 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.F4_click_text_3 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button3 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 최초의 합성수 */
+
+
+
+/* 자동차 바퀴 */
+#wheels{
+  display: flex;
+  margin-left: 22px;
+  margin-top: 230px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.F9_click_text_4 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.F9_click_text_4 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button4 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 자동차 바퀴 */
+
+
+/* 네잎클로버 */
+#leaf{
+  display: flex;
+  position: absolute;
+  margin-left: 58px;
+  margin-top: 30px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.F2_click_text_6 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.F2_click_text_6 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button6 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 네잎클로버 */
+
+
+
+/* 맥주 4캔 만원 */
+#beer{
+  display: flex;
+  position: absolute;
+  rotate: 90deg;
+  margin-left: -19px;
+  margin-top: 155px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.F2_click_text_7 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.F2_click_text_7 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button7 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 맥주 4캔 만원 */
+
+
+
+
+/* ------------------ F 글 모음------------------*/
+
+/* -------------------------------- F 박스 -------------------------------------*/
+
+
+
+
+
+
+
+
+/* -------------------------------- O 박스 -------------------------------------*/
+/* ------------------ O 막대 모음------------------*/
+.O{             /* KTX 경전선_좌------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, );
+  width: 86px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+.O1{            /* KTX 경전선_우------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 160px;
+  width: 190px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.O2{            /* 성층권_좌------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 30px;
+  width: 168px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+.O3{            /* 성층권_우------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 30px;
+  margin-left: 220px;
+  width: 99px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.O4{            /* 인생네컷_상------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 60px;
+  width: 22px;
+  height: 230px;
+  transition: 2s;
+  z-index: -1;
+}
+.O5{            /* 인생네컷_하------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 360px;
+  width: 22px;
+  height: 140px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.O6{            /* 인간의 수 감각_상------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 60px;
+  margin-left: 30px;
+  width: 22px;
+  height: 145px;
+  transition: 2s;
+  z-index: -1;
+}
+.O7{            /* 인간의 수 감각_하------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 310px;
+  margin-left: 30px;
+  width: 22px;
+  height: 160px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.O8{            /* 올림픽_좌------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 478px;
+  margin-left: 30px;
+  width: 76px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+.O9{            /* 올림픽_좌------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 478px;
+  margin-left: 222px;
+  width: 128px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.O10{            /* 대한민국 군대 단일------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 448px;
+  margin-left: 250px;
+  width: 100px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.O11{            /* 4분의 4박자_상------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 30px;
+  margin-left: 327px;
+  width: 22px;
+  height: 162px;
+  transition: 2s;
+  z-index: -1;
+}
+.O12{            /* 4분의 4박자_하------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 285px;
+  margin-left: 327px;
+  width: 22px;
+  height: 156px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.O13{            /* 의자다리, 그리스도_상------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 126px;
+  margin-left: 297px;
+  width: 22px;
+  height: 142px;
+  transition: 2s;
+  z-index: -1;
+}
+.O14{            /* 의자다리, 그리스도_하------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 385px;
+  margin-left: 297px;
+  width: 22px;
+  height: 56px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+/* ------------------ O 막대 모음------------------*/
+
+/* ------------------ O 글 모음------------------*/
+
+/* 성층권 */
+#air{
+  display: flex;
+  margin-left: 171px;
+  margin-top: 30px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.O2_click_text_1 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.O2_click_text_1 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.close-button1 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 성층권 */
+
+
+
+/* KTX*/
+#ktx{
+  display: flex;
+  position: absolute;
+  margin-left: 90px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.O_click_text_2 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.O_click_text_2 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button2 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* KTX*/
+
+
+
+
+/* 대한민국 군대 */
+#korea_army{
+  display: flex;
+  margin-left: -159px;
+  margin-top: 448px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.O10_click_text_2 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.O10_click_text_2 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button2 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 대한민국 군대 */
+
+
+
+/* 인간의 수 감각 */
+#human{
+  display: flex;
+  rotate: 90deg;
+  margin-left: -252px;
+  margin-top: 247px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.O6_click_text_3 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.O6_click_text_3 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button3 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 인간의 수 감각 */
+
+
+/* 의자 다리 */
+#chair{
+  display: flex;
+  rotate: 90deg;
+  margin-left: 188px;
+  margin-top: 80px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.O13_click_text_4 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.O13_click_text_4 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button4 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 의자 다리 */
+
+
+/* 그리스도인 신앙 */
+#greek{
+  display: flex;
+  position: absolute;
+  rotate: 90deg;
+  margin-left: 253px;
+  margin-top: 314px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.O14_click_text_5 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.O14_click_text_5 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button5 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* 그리스도인 신앙 */
+
+
+
+/* 4분의 4박자 */
+#music{
+  display: flex;
+  rotate: 90deg;
+  position: absolute;
+  margin-left: 296px;
+  margin-top: 228px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.O11_click_text_6 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.O11_click_text_6 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button6 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 4분의 4박자 */
+
+
+/* 올림픽과 월드컵 */
+#olympic{
+  display: flex;
+  position: absolute;
+  margin-left: 109px;
+  margin-top: 478px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.O8_click_text_6 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.O8_click_text_6 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button6 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 올림픽과 월드컵 */
+
+
+
+
+/* 인생네컷 */
+#photo{
+  display: flex;
+  position: absolute;
+  rotate: 90deg;
+  margin-left: -20px;
+  margin-top: 315px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.O4_click_text_7 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+
+.O4_click_text_7 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button7 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 맥주 4캔 만원 */
+
+
+
+
+/* ------------------ O 글 모음------------------*/
+
+/* -------------------------------- O 박스 -------------------------------------*/
+
+
+
+
+
+
+
+
+/* -------------------------------- U 박스 -------------------------------------*/
+/* ------------------ U 막대 모음------------------*/
+.U{            /* 네모형 인간_상------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  width: 22px;
+  height: 255px;
+  transition: 2s;
+  z-index: -1;
+}
+.U1{            /* 네모형 인간_하------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 343px;
+  width: 22px;
+  height: 98px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.U2{            /* 자연계 4가지 힘_상------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  width: 22px;
+  margin-left: 30px;
+  height: 108px;
+  transition: 2s;
+  z-index: -1;
+}
+.U3{            /* 자연계 4가지 힘_하------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  width: 22px;
+  margin-left: 30px;
+  margin-top: 240px;
+  height: 201px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.U4{            /* 제 40대_좌------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 448px;
+  width: 188px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+.U5{            /* 제 40대_좌------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 448px;
+  margin-left: 250px;
+  width: 100px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.U6{            /* 수영 4번 레인------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 478px;
+  width: 46px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+.U7{            /* 수영 4번 레인------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 478px;
+  margin-left: 148px;
+  width: 201px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.U8{            /* 지구의 내부_상------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 297px;
+  width: 22px;
+  height: 92px;
+  transition: 2s;
+  z-index: -1;
+}
+.U9{            /* 지구의 내부_하------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 182px;
+  margin-left: 297px;
+  width: 22px;
+  height: 259px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+
+.U10{            /* 군자 고결함_상------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 327px;
+  width: 22px;
+  height: 225px;
+  transition: 2s;
+  z-index: -1;
+}
+.U11{            /* 군자 고결함_하------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 395px;
+  margin-left: 327px;
+  width: 22px;
+  height: 46px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+/* ------------------ U 막대 모음------------------*/
+
+/* ------------------ U 글 모음------------------*/
+
+/* 네모형 인간 */
+#square{
+  display: flex;
+  position: absolute;
+  margin-left: -29px;
+  margin-top: 288px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+  rotate: 90deg;
+}
+
+.U1_click_text_2 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.U1_click_text_2 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.close-button2 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 자연계의 4가지 힘 */
+
+
+/* 자연계의 4가지 힘 */
+#power4{
+  display: flex;
+  margin-left: -21px;
+  margin-top: 162px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+  rotate: 90deg;
+}
+
+.U2_click_text_1 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.U2_click_text_1 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.close-button1 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 자연계의 4가지 힘 */
+
+
+/* 지구의 내부 */
+#mentle{
+  display: flex;
+  margin-left: 166px;
+  margin-top: 126px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+  rotate: 90deg;
+}
+
+.U8_click_text_1 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.U8_click_text_1 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.close-button1 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 지구의 내부 */
+
+
+
+/* 군자의 고결함 */
+#gentleman{
+  display: flex;
+  position: absolute;
+  rotate: 90deg;
+  margin-left: 257px;
+  margin-top: 300px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.U10_click_text_5 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.U10_click_text_5 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button5 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* 군자의 고결함 */
+
+
+
+/* 수영 4번 레인 */
+#swim{
+  display: flex;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 479px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.U6_click_text_6 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.U6_click_text_6 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button6 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 네잎클로버 */
+
+
+/* 제 40대  */
+#design40{
+  display: flex;
+  position: absolute;
+  margin-left: 192px;
+  margin-top: 448px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.U4_click_text_7 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.U4_click_text_7 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button40 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 제 40대  */
+
+
+
+
+/* ------------------ U 글 모음------------------*/
+
+/* -------------------------------- U 박스 -------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* -------------------------------- R 박스 -------------------------------------*/
+/* ------------------ R 막대 모음------------------*/
+.L{             /* 해병대와 4_좌------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, );
+  width: 166px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+.L1{            /* 해병대와 4_우------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 282px;
+  width: 38px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.L2{            /*  만물 구성의 4원소설------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 30px;
+  margin-left: 145px;
+  width: 175px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.L3{            /* 정리정돈의 미_상------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 60px;
+  width: 22px;
+  height: 40px;
+  transition: 2s;
+  z-index: -1;
+}
+.L4{             /* 정리정돈의 미_하------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 202px;
+  width: 22px;
+  height: 299px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.L5{            /* 4점대_상------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 60px;
+  margin-left: 30px;
+  width: 22px;
+  height: 240px;
+  transition: 2s;
+  z-index: -1;
+}
+.L6{            /* 4점대_하------------------*/
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 350px;
+  margin-left: 30px;
+  width: 22px;
+  height: 150px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.L7{             /* 단일 라인 가로------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, );
+  margin-top: 200px;
+  margin-left: 60px;
+  width: 230px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.L8{             /* 안전점검의 날 단일------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, );
+  margin-top: 230px;
+  margin-left: 60px;
+  width: 130px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.L9{            /* 단일 라인 세로-----------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 60px;
+  margin-left: 297px;
+  width: 22px;
+  height: 192px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.L10{            /* 테셀레이션 단일------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 327px;
+  width: 22px;
+  height: 172px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.L11{             /* 4444-4444_상단-----------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, );
+  margin-top: 282px;
+  margin-left: 120px;
+  rotate: 55deg;
+  transform: skew(-35deg);
+  width: 85px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+.L12{             /* 4444-4444_상단-----------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, );
+  margin-top: 457px;
+  margin-left: 247px;
+  rotate: 55deg;
+  transform: skew(-35deg);
+  width: 76px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+.L13{             /* 단일 라인 대각선------------------*/
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, );
+  margin-top: 368px;
+  margin-left: 110px;
+  rotate: 55deg;
+  transform: skew(-35deg);
+  width: 295px;
+  height: 22px;
+  transition: 2s;
+  z-index: -1;
+}
+
+
+
+/* ------------------ R 막대 모음------------------*/
+
+/* ------------------ R 글 모음------------------*/
+
+/* 만물 구성의 4원소설 */
+#seoulmountain{
+  display: flex;
+  margin-top: 30px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.L2_click_text_1 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.L2_click_text_1 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.close-button1 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 만물 구성의 4원소설 */
+
+
+
+/* 해병대와 4 */
+#rokmc{
+  display: flex;
+  margin-left: 32px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.L1_click_text_2 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.L1_click_text_2 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button2 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 해병대와 4 */
+
+
+
+/* 정리정돈의 미 */
+#cleaning{
+  display: flex;
+  rotate: 90deg;
+  margin-left: -316px;
+  margin-top: 140px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.L3_click_text_3 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.L3_click_text_3 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button3 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 정리정돈의 미 */
+
+
+/* 테셀레이션 */
+#tessellation{
+  display: flex;
+  position: absolute;
+  rotate: 90deg;
+  margin-left: 300px;
+  margin-top: 203px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.L10_click_text_4 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.L10_click_text_4 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button4 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 테셀레이션 */
+
+
+
+
+/* 010-XXXX-4444 */
+#phonenumber{
+  display: flex;
+  rotate: 55deg;
+  margin-top: 370px;
+  margin-left: 105px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.L11_click_text_2 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.L11_click_text_2 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button2 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 010-XXXX-4444 */
+
+
+
+/* 안전점검의 날 */
+#day4{
+  display: flex;
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 195px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.L8_click_text_6 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.L8_click_text_6 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button6 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 안전점검의 날 */
+
+
+
+
+/* 4점대 */
+#university{
+  display: flex;
+  position: absolute;
+  rotate: 90deg;
+  margin-left: 20px;
+  margin-top: 313px;
+  font-size: 17px;
+  font-weight: 400;
+  height: 22px;
+}
+
+.L5_click_text_7 {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.L5_click_text_7 > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.image{
+  width: 650px;
+  height: 650px;
+}
+.image > img{
+  width: 850px;
+  height: 650px;
+  margin: 0;
+}
+
+
+
+.close-button7 {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 300;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+/* 4점대 */
+
+
+
+
+
+
+
+/* ------------------ R 글 모음------------------*/
+
+/* -------------------------------- R 박스 -------------------------------------*/
+
+
+
+
+
+
+
+
+/* --------------------------------키프레임 모음 -------------------------------------*/
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+@keyframes slideRight {
+from {
+  transform: translateX(-100%); /* 시작 지점 */
+}
+to {
+  transform: translateX(0); /* 종료 지점 */
+}
+}
+
+@keyframes slideLeft {
+from {
+  transform: translateX(300%); /* 시작 지점 */
+}
+to {
+  transform: translateX(0); /* 종료 지점 */
+}
+}
+
+@keyframes slideRight2 {
+from {
+  transform: translateX(-800%); /* 시작 지점 */
+}
+to {
+  transform: translateX(0); /* 종료 지점 */
+}
+}
+
+@keyframes slideDown {
+from {
+  transform: translateY(-800%); /* 시작 지점 */
+}
+to {
+  transform: translateY(0); /* 종료 지점 */
+}
+}
+
+@keyframes slideUp {
+from {
+  transform: translateY(200%); /* 시작 지점 */
+}
+to {
+  transform: translateY(0); /* 종료 지점 */
+}
+}
+
+/* --------------------------------키프레임 모음 -------------------------------------*/

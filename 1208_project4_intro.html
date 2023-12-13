@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- STYLE SHEET -->
+
+    <link rel="stylesheet" href="/실습/기말과제/1208_project4_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;900&family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+
+
+    <title>찐막</title>
+</head>
+<body>
+    <!--------------------------- 미디어쿼리(모바일, 웹) --------------------------------->
+    <div id="mobile">
+        <p>모바일 브라우저를 지원하지 않습니다.전체화면으로 확장시켜주세요.</p>
+    </div>
+
+    <div id="main">
+    <!--------------------------- 미디어쿼리(모바일, 웹) --------------------------------->
+
+
+
+
+
+    <!--------------------------- 배경 이펙트(자바, 블러 등)) --------------------------------->
+        <div id="bg"></div>
+        <div class="blur"></div>
+    <!--------------------------- 배경 이펙트(자바, 블러 등)) --------------------------------->
+
+
+
+
+
+
+    <!--------------------------- 네비바 옵션(네비바) --------------------------------->
+    <nav>
+        <ul>
+          <li><a href="#main">Main</a></li>
+          <li><a href="#list" id="listBtn">List</a></li>
+          <li><a href="#about" id="aboutBtn">About</a></li>
+        </ul>
+      </nav>
+    <!--------------------------- 네비바 옵션(네비바) --------------------------------->
+
+
+
+
+    <!--------------------------- 팝업 관련 --------------------------------->
+
+    <div id="list_popup" style="display: none;" class="list_popup">
+      <div class="images">
+        <img src="/기말테스트/사진/웹 사진/디디 웹.png" alt="">
+      </div>
+    </div>
+      
+  
+    <div id="about_popup" style="display: none;">
+      <p>어바웃팝업</p>
+    </div>
+
+    <!--------------------------- 팝업 관련 --------------------------------->
+    
+
+
+
+
+
+
+    <!--------------------------- 카테고리 --------------------------------->
+
+
+
+    <!--------------------------- 카테고리 --------------------------------->
+
+
+
+
+
+    <!--------------------------- FOUR --------------------------------->
+    <div class="container">
+      <!-------------------------------------------------- F 박스 ------------------------------------------------------>
+      <div class="box">
+
+        <!----------- F 박스 --------------->
+
+        <div class="F"></div>   <!--봄,여름,가을,겨울-->
+        <div class="F1"></div>
+
+
+        <div class="F2"></div>   <!--맥주네캔-->
+        <div class="F3"></div>
+
+
+        <div class="F4"></div>  <!--합성수-->
+        <div class="F5"></div>
+
+
+        <div class="F6"></div>  <!--네잎클로버-->
+
+
+        <div class="F7"></div>  <!--엘베F층-->
+        <div class="F8"></div>
+
+
+        <div class="F9"></div>  <!--자동차 바퀴-->
+        <div class="F10"></div>
+
+        <!----------- F 박스 --------------->
+        <!----------- F 텍스트 --------------->
+
+
+        <p id="season" class="F1_click_text_1" onclick="showPopup1()">    <!--봄,여름,가을,겨울-->
+          <a>봄, 여름, 가을, 겨울</a>
+        </p>
+        <div id="popup_nature" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/웹 사진/자연계열.png" alt="">
+            <span class="close-button1" onclick="hidePopup1()">X</span>
+          </div>
+        </div>
+
+
+
+
+        <p id="elevator" class="F7_click_text_2" onclick="showPopup2()">    <!--엘리베이터-->
+          <a>엘리베이터 F층</a>
+        </p>
+        <div id="popup_negative" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/웹 사진/부정적.png" alt="">
+            <span class="close-button2" onclick="hidePopup2()">X</span>
+          </div>
+        </div>
+
+
+
+
+        <p id="thefirst" class="F4_click_text_3" onclick="showPopup3()">    <!--최초의 합성수-->
+          <a>최초의 합성수</a>
+        </p>
+        <div id="popup_4meaning" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/웹 사진/4의 의미.png" alt="">
+            <span class="close-button3" onclick="hidePopup3()">X</span>
+          </div>
+        </div>
+
+
+
+        <p id="wheels" class="F9_click_text_4" onclick="showPopup4()">    <!--자동차 바퀴-->
+          <a>자동차 바퀴는 왜 4개?</a>
+        </p>
+        <div id="popup_safety" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/웹 사진/안전성.png" alt="">
+            <span class="close-button4" onclick="hidePopup4()">X</span>
+          </div>
+        </div>
+
+
+
+        <p id="leaf" class="F2_click_text_6" onclick="showPopup6()">    <!--네잎클로버-->
+          <a>네잎클로버</a>
+        </p>
+        <div id="popup_lifearound" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/웹 사진/긍정.png" alt="">
+            <span class="close-button6" onclick="hidePopup6()">X</span>
+          </div>
+        </div>
+
+
+
+        <p id="beer" class="F2_click_text_7" onclick="showPopup7()">    <!--맥주 4캔-->
+          <a>맥주 4캔</a>
+        </p>
+        <div id="popup_simple" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/웹 사진/단순.png" alt="">
+            <span class="close-button7" onclick="hidePopup7()">X</span>
+          </div>
+        </div>
+
+
+        <!----------- F 텍스트 --------------->
+      </div>
+      <!-------------------------------------------------- F 박스 ------------------------------------------------------>
+
+
+
+
+      <!-------------------------------------------------- O 박스 ------------------------------------------------------>
+      <div class="box">
+        <!----------- O 박스 --------------->
+
+        <div class="O"></div>   <!--KTX-->
+        <div class="O1"></div>
+        
+        
+        <div class="O2"></div>   <!--성층권-->
+        <div class="O3"></div>
+        
+        
+        <div class="O4"></div>  <!--인생네컷-->
+        <div class="O5"></div>
+        
+        
+        <div class="O6"></div>  <!--인간의수감각-->
+        <div class="O7"></div>  
+        
+        
+        <div class="O8"></div>  <!--올림픽, 월드컵-->
+        <div class="O9"></div>
+        
+        
+        <div class="O10"></div>   <!--대한민국 군대--> 
+
+
+        <div class="O11"></div>   <!--4분의 4박자-->
+        <div class="O12"></div>   
+
+        <div class="O13"></div>   <!--의자다리, 그리스도-->
+        <div class="O14"></div>
+
+
+        <!----------- O 박스 --------------->
+        <!----------- O 텍스트 --------------->
+                
+        <p id="air" class="O2_click_text_1" onclick="showPopup1()">    <!--성층권-->
+          <a>성층권</a>
+        </p>
+        <div id="popup_nature" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/네잎클로버.jpeg" alt="">
+            <span class="close-button1" onclick="hidePopup1()">X</span>
+          </div>
+        </div>
+
+
+
+        <p id="ktx" class="O_click_text_2" onclick="showPopup2()">    <!--KTX-->
+          <a>KTX 440</a>
+        </p>
+        <div id="popup_negative" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/웹 사진/부정적.png" alt="">
+            <span class="close-button2" onclick="hidePopup2()">X</span>
+          </div>
+        </div>
+
+
+
+
+        <p id="korea_army" class="O10_click_text_2" onclick="showPopup2()">    <!--대한민국 군대-->
+          <a>4군단 4사단 4여단 4비행단</a>
+        </p>
+        <div id="popup_negative" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/4대선지자.jpeg" alt="">
+            <span class="close-button2" onclick="hidePopup2()">X</span>
+          </div>
+        </div>
+
+
+
+
+        <p id="human" class="O6_click_text_3" onclick="showPopup3()">    <!--인간의 수 감각-->
+          <a>인간의 수 감각</a>
+        </p>
+        <div id="popup_4meaning" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/숫자사진.jpg" alt="">
+            <span class="close-button3" onclick="hidePopup3()">X</span>
+          </div>
+        </div>
+
+
+
+        <p id="chair" class="O13_click_text_4" onclick="showPopup4()">    <!--의자다리-->
+          <a>의자 다리</a>
+        </p>
+        <div id="popup_safety" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/건물.jpg" alt="">
+            <span class="close-button4" onclick="hidePopup4()">X</span>
+          </div>
+        </div>
+
+
+        <p id="greek" class="O14_click_text_5" onclick="showPopup5()">    <!--그리스도신앙-->
+          <a>그리스도인 신앙</a>
+        </p>
+        <div id="popup_religion" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/웹 사진/종교.png" alt="">
+            <span class="close-button5" onclick="hidePopup5()">X</span>
+          </div>
+        </div>
+
+
+
+        <p id="music" class="O11_click_text_6" onclick="showPopup6()">    <!--4분의 4박자-->
+          <a>4분의 4박자</a>
+        </p>
+        <div id="popup_lifearound" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/4분의 4박자.jpeg" alt="">
+            <span class="close-button6" onclick="hidePopup6()">X</span>
+          </div>
+        </div>
+
+
+        <p id="olympic" class="O8_click_text_6" onclick="showPopup6()">    <!--4분의 4박자-->
+          <a>올림픽과 월드컵</a>
+        </p>
+        <div id="popup_lifearound" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/4분의 4박자.jpeg" alt="">
+            <span class="close-button6" onclick="hidePopup6()">X</span>
+          </div>
+        </div>
+
+
+
+        <p id="photo" class="O4_click_text_7" onclick="showPopup7()">    <!--인생네컷-->
+          <a>인생네컷</a>
+        </p>
+        <div id="popup_simple" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/사계절.jpeg" alt="">
+            <span class="close-button7" onclick="hidePopup7()">X</span>
+          </div>
+        </div>
+
+
+
+        <!----------- O 텍스트 --------------->
+      </div>
+      <!-------------------------------------------------- O 박스 ------------------------------------------------------>
+
+      
+
+
+
+      <!-------------------------------------------------- U 박스 ------------------------------------------------------>
+      <div class="box">
+        <!----------- U 박스 --------------->
+
+        <div class="U"></div>   <!--네모형 인간-->
+        <div class="U1"></div>
+
+
+        <div class="U2"></div>   <!--자연계 4가지 힘-->
+        <div class="U3"></div>
+        
+
+        <div class="U4"></div>   <!--제 40대-->
+        <div class="U5"></div>
+
+
+        <div class="U6"></div>   <!--4번 레인-->
+        <div class="U7"></div>
+
+
+        <div class="U8"></div>   <!--지구의 내부-->
+        <div class="U9"></div>
+
+
+        <div class="U10"></div>   <!--군자 고결함-->
+        <div class="U11"></div>
+
+        <!----------- U 박스 --------------->
+        <!----------- U 텍스트 --------------->
+                
+        <p id="power4" class="U2_click_text_1" onclick="showPopup1()">    <!--자연계 4가지 힘-->
+          <a>자연계의 4가지 힘</a>
+        </p>
+        <div id="popup_nature" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/네잎클로버.jpeg" alt="">
+            <span class="close-button1" onclick="hidePopup1()">X</span>
+          </div>
+        </div>
+
+
+        <p id="mentle" class="U8_click_text_1" onclick="showPopup1()">    <!--자연계 4가지 힘-->
+          <a>지구의 내부</a>
+        </p>
+        <div id="popup_nature" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/네잎클로버.jpeg" alt="">
+            <span class="close-button1" onclick="hidePopup1()">X</span>
+          </div>
+        </div>
+
+
+
+        <p id="gentleman" class="U10_click_text_5" onclick="showPopup5()">    <!--군자 고결함-->
+          <a>군자의 고결한 인품 상징</a>
+        </p>
+        <div id="popup_religion" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/KTX.jpeg" alt="">
+            <span class="close-button5" onclick="hidePopup5()">X</span>
+          </div>
+        </div>
+
+
+        <p id="swim" class="U6_click_text_6" onclick="showPopup6()">    <!--수영 4번 레인-->
+          <a>수영 4번 레인</a>
+        </p>
+        <div id="popup_lifearound" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/4분의 4박자.jpeg" alt="">
+            <span class="close-button6" onclick="hidePopup6()">X</span>
+          </div>
+        </div>
+
+
+
+        <p id="design40" class="U4_click_text_7" onclick="showPopup40()">    <!--제 40대-->
+          <a>제 40대</a>
+        </p>
+        <div id="popup_kang" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/웹 사진/강준혁.png" alt="">
+            <span class="close-button40" onclick="hidePopup40()">X</span>
+          </div>
+        </div>
+
+
+        <p id="square" class="U1_click_text_2" onclick="showPopup2()">    <!--네모형인간-->
+          <a>네모형 인간</a>
+        </p>
+        <div id="popup_negative" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/웹 사진/부정적.png" alt="">
+            <span class="close-button2" onclick="hidePopup2()">X</span>
+          </div>
+        </div>
+
+
+        
+        <!----------- U 텍스트 --------------->
+      </div>
+      <!-------------------------------------------------- U 박스 ------------------------------------------------------>
+
+
+
+
+      <!-------------------------------------------------- R 박스 ------------------------------------------------------>
+      <div class="box">
+        <!----------- R 박스 --------------->
+
+        <div class="L"></div>   <!--해병대와 4-->
+        <div class="L1"></div>
+
+
+        <div class="L2"></div>   <!--만물 구성의 4원소설-->
+
+
+        <div class="L3"></div>   <!--정리정돈의 미-->
+        <div class="L4"></div>   
+
+
+        <div class="L5"></div>   <!--4점대-->
+        <div class="L6"></div>   
+
+
+        <div class="L7"></div>   <!--단일 라인-->
+
+
+        <div class="L8"></div>   <!--안전점검의 날-->
+
+
+        <div class="L9"></div>   <!--단일 라인2-->
+
+
+        <div class="L10"></div>   <!--테셀레이션-->
+
+
+        <div class="L11"></div>   <!--4444-4444-->
+        <div class="L12"></div>
+
+
+        <div class="L13"></div>   <!--단일 라인3-->
+
+        <!----------- R 박스 --------------->
+        <!----------- R 텍스트 --------------->
+        
+        <p id="seoulmountain" class="L2_click_text_1" onclick="showPopup1()">    <!--만물 구성의 4원소설-->
+          <a>만물 구성의 4원소설</a>
+        </p>
+        <div id="popup_nature" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/네잎클로버.jpeg" alt="">
+            <span class="close-button1" onclick="hidePopup1()">X</span>
+          </div>
+        </div>
+
+
+        <p id="rokmc" class="L1_click_text_2" onclick="showPopup2()">    <!--해병대와 4-->
+          <a>해병대와 숫자 4</a>
+        </p>
+        <div id="popup_negative" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/4대선지자.jpeg" alt="">
+            <span class="close-button2" onclick="hidePopup2()">X</span>
+          </div>
+        </div>
+
+
+        <p id="cleaning" class="L3_click_text_3" onclick="showPopup3()">    <!--최초의 합성수-->
+          <a>정리정돈의 미</a>
+        </p>
+        <div id="popup_4meaning" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/숫자사진.jpg" alt="">
+            <span class="close-button3" onclick="hidePopup3()">X</span>
+          </div>
+        </div>
+        
+
+
+        <p id="tessellation" class="L10_click_text_4" onclick="showPopup4()">    <!--테셀레이션-->
+          <a>테셀레이션</a>
+        </p>
+        <div id="popup_safety" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/건물.jpg" alt="">
+            <span class="close-button4" onclick="hidePopup4()">X</span>
+          </div>
+        </div>
+
+
+        <p id="phonenumber" class="L11_click_text_2" onclick="showPopup2()">    <!--010-xxxx-4444-->
+          <a>010-XXXX-4444</a>
+        </p>
+        <div id="popup_negative" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/4대선지자.jpeg" alt="">
+            <span class="close-button2" onclick="hidePopup2()">X</span>
+          </div>
+        </div>
+
+
+
+        <p id="day4" class="L8_click_text_6" onclick="showPopup6()">    <!--안전점검의 날-->
+          <a>안전점검의 날</a>
+        </p>
+        <div id="popup_lifearound" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/4분의 4박자.jpeg" alt="">
+            <span class="close-button6" onclick="hidePopup6()">X</span>
+          </div>
+        </div>
+
+
+        <p id="university" class="L5_click_text_7" onclick="showPopup7()">    <!--4점대-->
+          <a>4점대</a>
+        </p>
+        <div id="popup_simple" class="popup">
+          <div class="image">
+            <img src="/기말테스트/사진/사계절.jpeg" alt="">
+            <span class="close-button7" onclick="hidePopup7()">X</span>
+          </div>
+        </div>
+
+
+
+
+
+        <!----------- R 텍스트 --------------->
+      </div>
+      <!-------------------------------------------------- R 박스 ------------------------------------------------------>
+
+    </div>
+
+
+    <!--------------------------- FOUR --------------------------------->
+
+
+
+
+
+
+
+    </div>
+  <!-- JAVA SCRIPT -->
+  <script type="text/javascript" src="particles.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script type="text/javascript" src="/실습/기말과제/1208_project4_interaction.js"></script>
+  <script type="text/javascript" src="/실습/기말과제/1208_background.js"></script>
+</body>
+</html>
